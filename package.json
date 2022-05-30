@@ -1,0 +1,14 @@
+{
+  "name": "fluid-player-e2e",
+  "version": "0.0.0",
+  "description": "Cypress E2E tests for Fluid Player",
+  "main": "",
+  "author": "EXOGROUP <info@exogroup.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
+}
