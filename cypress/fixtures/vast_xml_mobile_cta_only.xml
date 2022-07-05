@@ -55,13 +55,13 @@
                         <MobileText>CTA Text Mobile</MobileText>
 
                         <!-- The PCText is identical to MobileText -->
-                        <PCText>CTA Text Desktop</PCText>
+<!--                        <PCText>CTA Text Desktop</PCText>-->
 
                         <!-- The link corresponds to our "Display Url" -->
-<!--                        <Link><![CDATA[https://www.example.com]]></Link>-->
+                        <Link><![CDATA[https://www.example.com]]></Link>
 
                         <!-- The Tracking is the same as our to ClickTracking -->
-<!--                        <Tracking><![CDATA[https://www.example.com/tracking.html]]></Tracking>-->
+                        <Tracking><![CDATA[https://www.example.com/tracking.html]]></Tracking>
                     </TitleCTA>
                 </Extension>
             </Extensions>
