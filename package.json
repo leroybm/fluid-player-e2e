@@ -9,6 +9,9 @@
     "start": "cypress open"
   },
   "devDependencies": {
-    "cypress": "^10.3.0"
-  }
+    "cypress": "12.17.3",
+    "fluid-player": "^3.21.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {}
 }

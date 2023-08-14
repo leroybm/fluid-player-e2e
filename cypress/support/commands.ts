@@ -23,3 +23,20 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+// BE SURE TO ADD THESE TO INDEX.D.TS
+
+Cypress.Commands.add('playVideo', () => {
+  cy.get('#fluid-player-e2e-case_fluid_state_button').click();
+});
+
+Cypress.Commands.add('interceptVast', (vastFile, fixtureFile) => {
+  cy.intercept('GET', `/static/${vastFile}.xml`, { fixture: `${vastFile}/${fixtureFile}.xml` });
+});
+
+Cypress.Commands.add('loadFluidPlayer', (configuration, target = "fluid-player-e2e-case") => {
+    cy.window().then(win => {
+      return win.fluidPlayer(target, configuration);
+    })
+});
